@@ -1,8 +1,11 @@
 function addingEventListener() {
     const input = document.getElementById('button');
-    input.addEventListener('click', function() {
-      alert('He-He! That Tickles!');
-    });
+    
+    function clickAlert(){
+      alert('He-He! That Tickles!')
+    }
+
+    input.addEventListener('click', clickAlert);
 }
 
 addingEventListener();
